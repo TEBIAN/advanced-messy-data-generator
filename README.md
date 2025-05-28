@@ -36,6 +36,24 @@ This tool is designed for:
 - Configurable output size (scale up or down from original dataset)
 - Flexible input/output formats (CSV, JSON)
 
+## Final Project Structure 📋
+
+Your final repository should look like this:
+
+advanced-messy-data-generator/
+├── .github/
+│   └── ISSUE_TEMPLATE/
+│       ├── bug_report.md
+│       └── feature_request.md
+├── examples/
+│   └── sample_data.csv
+├── .gitignore
+├── CHANGELOG.md
+├── LICENSE
+├── README.md
+├── python_standalone.py
+└── requirements.txt
+
 ## 📋 Requirements
 
 ### System Requirements
