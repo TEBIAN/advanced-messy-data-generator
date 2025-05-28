@@ -1,5 +1,11 @@
 # Advanced Messy Data Generator
 
+![Python Version](https://img.shields.io/badge/python-3.7+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![GitHub Stars](https://img.shields.io/github/stars/YOUR_USERNAME/advanced-messy-data-generator.svg)
+![GitHub Issues](https://img.shields.io/github/issues/YOUR_USERNAME/advanced-messy-data-generator.svg)
+![GitHub Forks](https://img.shields.io/github/forks/YOUR_USERNAME/advanced-messy-data-generator.svg)
+
 A sophisticated Python tool that transforms clean datasets into realistic messy datasets for testing data cleaning and quality processes. This generator intelligently analyzes your input data and creates expanded datasets with various types of data quality issues commonly found in real-world scenarios.
 
 ## 🎯 Purpose
