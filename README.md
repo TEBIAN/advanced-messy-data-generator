@@ -52,7 +52,7 @@ advanced-messy-data-generator/
 ├── CHANGELOG.md
 ├── LICENSE
 ├── README.md
-├── python_standalone.py
+├── messy_data_generator.py
 └── requirements.txt
 </details>
 
@@ -80,7 +80,7 @@ pip install pandas numpy
 ## 🚀 Installation
 
 ### Method 1: Direct Download
-1. Download `python_standalone.py`
+1. Download `messy_data_generator.py`
 2. Install dependencies: `pip install pandas numpy`
 3. Run the script directly
 
@@ -112,12 +112,12 @@ pip install pandas numpy
 
 #### Basic Usage
 ```bash
-python python_standalone.py input_file.csv
+python messy_data_generator.py input_file.csv
 ```
 
 #### Advanced Usage with Custom Parameters
 ```bash
-python python_standalone.py input_file.csv \
+python messy_data_generator.py input_file.csv \
     --output messy_output.csv \
     --rows 50000 \
     --duplicates 0.20 \
@@ -144,7 +144,7 @@ python python_standalone.py input_file.csv \
 
 ```python
 import pandas as pd
-from python_standalone import AdvancedMessyDataGenerator
+from messy_data_generator import AdvancedMessyDataGenerator
 
 # Load your clean data
 clean_df = pd.read_csv('clean_data.csv')
@@ -245,7 +245,7 @@ Memory usage: 2.34 MB
 
 ### Light Messiness (Testing)
 ```bash
-python python_standalone.py data.csv \
+python messy_data_generator.py data.csv \
     --duplicates 0.05 \
     --nulls 0.03 \
     --wrong-ranges 0.02 \
@@ -265,7 +265,7 @@ python python_standalone.py data.csv \
 
 ### Large Dataset Generation
 ```bash
-python python_standalone.py small_sample.csv \
+python messy_data_generator.py small_sample.csv \
     --rows 1000000 \
     --output large_messy_dataset.csv
 ```
@@ -335,7 +335,7 @@ python python_standalone.py small_sample.csv \
 ### Data Engineering
 ```bash
 # Test ETL pipeline with realistic messy data
-python python_standalone.py clean_transactions.csv \
+python messy_data_generator.py clean_transactions.csv \
     --rows 100000 \
     --output etl_test_data.csv \
     --duplicates 0.20 \
@@ -345,7 +345,7 @@ python python_standalone.py clean_transactions.csv \
 ### Machine Learning
 ```bash
 # Generate training data for data cleaning models
-python python_standalone.py labeled_dataset.csv \
+python messy_data_generator.py labeled_dataset.csv \
     --rows 50000 \
     --output ml_training_messy.csv \
     --text-corruption 0.15
@@ -354,7 +354,7 @@ python python_standalone.py labeled_dataset.csv \
 ### Quality Assurance
 ```bash
 # Create stress test data for validation systems
-python python_standalone.py production_sample.csv \
+python messy_data_generator.py production_sample.csv \
     --rows 25000 \
     --output qa_stress_test.csv \
     --wrong-ranges 0.25 \
